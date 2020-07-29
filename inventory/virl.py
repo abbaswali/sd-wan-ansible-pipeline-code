@@ -44,7 +44,7 @@ def main():
             if os.path.exists(config_file):
                 break
         else:
-            sys.stdout.write('unable to locate .virlrc\n')
+            sys.stdout.write('unable to locate the .virlrc\n')
             sys.exit(-1)
 
         envre = re.compile(r'''^([^\s=]+)=(?:[\s"']*)(.+?)(?:[\s"']*)$''')
